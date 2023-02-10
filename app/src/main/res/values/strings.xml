@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login/Register form</string>
+    <string name="app_name">Login/Register Form</string>
     <string name="loginButton">LOGIN</string>
     <string name="registerButton">REGISTER</string>
 </resources>
