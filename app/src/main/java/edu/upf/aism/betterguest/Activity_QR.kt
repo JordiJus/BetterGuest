@@ -6,26 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class Activity_QR : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_qr)
+
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setBackgroundDrawable(null)
-        val btn_Login = findViewById<Button>(R.id.Btn_L01)
+        val btn_QR = findViewById<Button>(R.id.Btn_B03)
 
-        btn_Login.setOnClickListener {
-            val intent = Intent(this, Activity_Login::class.java)
-            startActivity(intent)
-        }
-        val btn_CheckIn = findViewById<Button>(R.id.Btn_CI01)
-
-        btn_CheckIn.setOnClickListener {
-            val intent = Intent(this, Activity_CheckIn::class.java)
+        // 为按钮添加点击事件
+        btn_QR.setOnClickListener {
+            val intent = Intent(this, Activity_Home::class.java)
             startActivity(intent)
         }
     }
-
-
 }
